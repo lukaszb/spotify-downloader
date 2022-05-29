@@ -234,7 +234,7 @@ There is an Arch User Repository (AUR) package for [spotDL](https://aur.archlinu
     ```
 
 - #### To manually choose a lyrics provider, run
-  
+
     ```bash
       spotdl [songUrl] --lyrics-provider lyrics_provider
     ```
@@ -298,6 +298,7 @@ There is an Arch User Repository (AUR) package for [spotDL](https://aur.archlinu
     - {album}
     - {ext}
     - {playlist}
+    - {track_number}
 
 ## `pipx` Isolated Environment Alternative
 

@@ -139,6 +139,7 @@ def _parse_path_template(path_template, song_object, output_format, short=False)
             else song_object.contributing_artists[0]
         ),
         ext=_sanitize_filename(output_format),
+        track_number=_sanitize_filename(f"{song_object.track_number:0>2}"),
     )
 
     if len(converted_file_name) > 250:
