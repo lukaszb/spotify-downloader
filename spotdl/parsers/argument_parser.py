@@ -1,5 +1,6 @@
 from argparse import ArgumentParser, RawDescriptionHelpFormatter
 
+import os
 import pkg_resources
 
 help_notice = r"""
@@ -138,7 +139,7 @@ def parse_arguments():
         "--path-template",
         help="Path template for downloaded files",
         type=str,
-        default=None,
+        default=os.environ.get("SPOTDL_PATH_TEMPLATE"),
     )
 
     # Option to specify path to local ffmpeg
